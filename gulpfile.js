@@ -50,6 +50,18 @@ function img() {
 
 }
 
+function imgPng() {
+    return src('src/img/**/*.png')
+        .pipe(dest('dist/img/'))
+
+}
+
+function imgJpg() {
+    return src('src/img/**/*.jpg')
+        .pipe(dest('dist/img/'))
+
+}
+
 function clear() {
     return del('dist')
 }
@@ -67,6 +79,6 @@ function serve() {
 
 
 
-exports.build = series(clear, scss, html, javaScript, img)
-exports.serve = series(clear, scss, html, javaScript, img, serve)
+exports.build = series(clear, scss, html, javaScript, img, imgPng, imgJpg)
+exports.serve = series(clear, scss, html, javaScript, img, imgPng, imgJpg, serve)
 exports.clear = clear
