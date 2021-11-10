@@ -1,0 +1,83 @@
+@import 'variables.scss';
+
+/*------------------СЕРВИСЫ КАРТОЧКИ-------------------*/
+.page__services{
+  position: relative;
+  margin: -111px 0px 0px 0px;
+  z-index: 2;
+}
+.services{}
+.services__container{
+}
+.services__body{
+
+}
+
+@media (min-width: 670px) {
+  .services__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+  }
+}
+.services__column{
+  padding: 0px 15px;
+  flex: 0 1 33.333%;
+}
+
+@media (min-width: 670px) {
+  .services__column{
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services__column {
+    flex: 0 1 50%;
+  }
+  .services__column:not(:last-child){
+    margin: 0px 0px 30px 0px;
+  }
+  .services__column:last-child{
+    flex: 1 1 100%
+  }
+}
+
+
+
+.services__item{
+  height: 100%;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background: #FFFFFF;
+  padding: 35px;
+}
+@media (max-width: 992px) {
+  .services__item{
+    padding: 25px;
+  }
+}
+.item-service{}
+.item-service > *:not(:last-child){
+  margin: 0px 0px 10px 0px;
+}
+.item-service_green{
+  background-color: $secondColor;
+  .item-service__title{
+    color: #FFFFFF;
+  }
+  .item-service__text{
+    color: #FFFFFF;
+  }
+}
+
+.item-service__icon{}
+.item-service__title{
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  font-size: 24px;
+  line-height: 133%;
+}
+.item-service__text{
+  color: $secondTextColor;
+  line-height: 142%;
+}
