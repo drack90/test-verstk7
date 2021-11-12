@@ -1,0 +1,117 @@
+@import 'variables.scss';
+
+/*-----------ADVENTAGES (ДОСТИЖЕНИЯ)------------------*/
+
+.advantages {
+    padding: 80px 0px;
+}
+
+@media (max-width: 992px) {
+    .advantages {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        padding: 30px 0px;
+    }
+}
+
+.advantages__container {}
+
+.advantages__header {
+    margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 767px) {
+    .advantages__header {
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+.header-block {
+    text-align: center;
+}
+
+.header-block__tittle {
+    font-size: 40px;
+    letter-spacing: 00.2px;
+    font-weight: 700;
+    line-height: 142%;
+}
+
+.header-block__tittle:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 992px) {
+    .header-block__tittle {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-block__tittle {
+        font-size: 30px;
+    }
+}
+
+.header-block__sub-title {
+    color: $secondTextColor;
+    line-height: 142%;
+}
+
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px -30px;
+}
+
+.advantages__column {
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+    .advantages__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 560px) {
+    .advantages__column {
+        flex: 0 1 100%;
+    }
+}
+
+.advantages__item {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.advantages__item>*:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.advantages__value {
+    font-size: 40px;
+    line-height: 142%;
+}
+
+.advantages__text {
+    color: $secondTextColor;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+}
