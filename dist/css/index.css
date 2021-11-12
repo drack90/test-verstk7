@@ -336,6 +336,90 @@ body {
 
 @charset "UTF-8";
 /*------------------PRACTICE (ОПЫТ)------------------*/
+.practice {
+  padding: 125px 0px 80px 0px; }
+
+@media (max-width: 993px) {
+  .practice {
+    padding: 40px 0px 80px 0px; } }
+
+@media (max-width: 767px) {
+  .practice {
+    padding: 0px 0px 40px 0px; } }
+
+.practice__header {
+  margin: 0px 0px 45px 0px; }
+
+@media (max-width: 767px) {
+  .practice__header {
+    margin: 0px 0px 30px 0px; } }
+
+.practice__body {
+  margin: 0px -20px -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.practice__column {
+  margin: 0px 0px 30px 0px;
+  padding: 0px 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; }
+
+@media (max-width: 1040px) {
+  .practice__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%; } }
+
+@media (max-width: 630px) {
+  .practice__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%; } }
+
+.item-practice__content {
+  padding: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+.item-practice {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.item-practice__link {
+  color: inherit; }
+
+.item-practice__link:hover {
+  text-decoration: underline; }
+
+.item-practice__link:not(:last-child) {
+  margin: 0px 0px 15px 0px; }
+
+.item-practice__title {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  font-weight: 700; }
+
+.item-practice__text {
+  color: #737373;
+  line-height: 142%; }
+
+.item-practice__image {
+  display: block;
+  padding: 0px 0px 60% 0px; }
 
 @charset "UTF-8";
 /*------------------СЕРВИСЫ КАРТОЧКИ-------------------*/

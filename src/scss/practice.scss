@@ -4,6 +4,95 @@
 
 .page__practice {}
 
-.practice {}
+.practice {
+    padding: 125px 0px 80px 0px;
+}
 
-.practice__header {}
+@media (max-width: 993px) {
+    .practice {
+        padding: 40px 0px 80px 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .practice {
+        padding: 0px 0px 40px 0px;
+    }
+}
+
+.practice__header {
+    margin: 0px 0px 45px 0px;
+}
+
+@media (max-width: 767px) {
+    .practice__header {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+.practice__body {
+    margin: 0px -20px -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.practice__column {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 20px;
+    flex: 0 1 25%
+}
+
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%
+    }
+}
+
+@media (max-width: 630px) {
+    .practice__column {
+        flex: 0 1 100%
+    }
+}
+
+.practice__item {}
+
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto; //автоматический размер по контенту
+}
+
+.item-practice {
+    background-color: #fff;
+    display: flex;
+    height: 100%; //увеличиваем размер карточки на 100%
+    flex-direction: column;
+}
+
+.item-practice__link {
+    color: inherit;
+}
+
+.item-practice__link:hover {
+    text-decoration: underline;
+}
+
+.item-practice__link:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+
+.item-practice__title {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    font-weight: 700;
+}
+
+.item-practice__text {
+    color: $secondTextColor;
+    line-height: 142%;
+}
+
+.item-practice__image {
+    display: block;
+    padding: 0px 0px 60% 0px;
+}
