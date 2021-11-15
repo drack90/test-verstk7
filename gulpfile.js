@@ -1,7 +1,8 @@
 //подключаем в работу GULP все установленные пакеты
 const { src, dest, series, watch } = require('gulp') //подключаем только методы а не весь gulp
 const sass = require('gulp-sass')
-const csso = require('gulp-csso')
+const csso = require('gulp-csso') //minify
+const gcmq = require('gulp-group-css-media-queries'); //группирует медиа запросы
 const include = require('gulp-file-include')
 const htmlmin = require('gulp-htmlmin')
 const del = require('del')
@@ -27,6 +28,7 @@ function scss() {
         .pipe(autoprefixer({
             browsers: ['last 2 versions']
         }))
+        .pipe(gcmq())
         .pipe(concat('index.css'))
         .pipe(dest('dist/css'))
 }

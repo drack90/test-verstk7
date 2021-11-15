@@ -5,15 +5,33 @@
 .page__whoweare {}
 
 .whoweare {
+    background-color: #fff;
     padding: 80px 0px 130px 0px;
+    @media (max-width: 950px){
+        padding: 50px 0px 50px 0px;
+        
+    }
+    @media (max-width: 767px){
+        padding: 20px 0px 50px 0px;
+        
+    }
 }
 
 .whoweare__header {
     margin: 0px 0px 100px 0px;
+    @media (max-width: 950px){
+        margin: 0px 0px 30px 0px;
+    }
 }
 
 .whoweare__body {
     display: flex;
+    align-items: flex-start;
+    @media (max-width: 950px){
+     flex-direction: column-reverse; 
+     align-items: stretch;
+   
+    }
 }
 
 .whoweare__video {
@@ -28,11 +46,40 @@
         left: 0;
         object-fit: cover;
     }
+    @media (max-width: 992px){
+        margin: 0px 0px 50px 0px;
+        padding: 0px 0px 56.25% 0px;
+        &:not(:last-child){
+            margin: 50px 0px 0px 0px;       
+        } 
+    }
+    @media (max-width: 767px){
+        &:not(:last-child){
+            margin: 30px 0px 0px 0px;       
+        }         
+    }
 }
 
 .whoweare__content {
     flex: 1 1 auto;
-    padding: 0px 0px 0px 121px;
+    padding: 20px 0px 0px 121px;
+    @media (max-width: 1080px){
+        padding: 20px 0px 0px 50px;
+    
+    }
+    @media (max-width: 992px){
+        padding: 0px 0px 0px 0px;
+       
+    }
+}
+
+
+.whoweare__top:not(:last-child){
+    margin: 0px 0px 50px 0px;
+    @media (max-width: 767px){
+        margin: 0px 0px 30px 0px;
+        
+    }
 }
 
 .whoweare__title {
@@ -40,6 +87,9 @@
     letter-spacing: 0.2px;
     line-height: 142%;
     font-size: 30px;
+    @media (max-width: 950px){
+        font-size: 24px;
+    }
 }
 
 .whoweare__title:not(:last-child) {
@@ -51,20 +101,44 @@
     line-height: 142%;
 }
 
-.whoweare__text:not(:last-child) {
-    margin: 0px 0px 50px 0px;
+.whoweare__items {
 }
-
-.whoweare__items {}
 
 .whoweare__item {}
 
-.item-whoweare {}
+.whoweare__item:not(:last-child){
+    margin: 0px 0px 30px 0px;
+}
+.item-whoweare {
+    display: flex;
 
-.item-whoweare__icon {}
+}
 
-.item-whoweare__body {}
+.item-whoweare__icon {
+    flex: 0 0 32px;
+}
 
-.item-whoweare__title {}
+.item-whoweare__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 20px;
+}
 
-.item-whoweare__text {}
+.item-whoweare__title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+}
+.item-whoweare__title:not(:last-child){
+    margin: 0px 0px 5px 0px;
+}
+
+.item-whoweare__text {
+    color: $secondTextColor;
+    font-size: 14px;
+    line-height: 142%;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 223px;
+}
