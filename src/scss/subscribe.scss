@@ -84,6 +84,11 @@
     text-align: center;
     color: #fff;
     padding: 0px 22px;
+    cursor: pointer;
+    &:hover{
+            background: #a04b29;
+
+    }
     @media (min-width: 810px){
         padding: 0px 15px;
     }

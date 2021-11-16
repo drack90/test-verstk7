@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+/*---------------CONTACT US-----------------*/
+.contact__page{}
+.contact{
+    background-color: #fff;
+    padding: 42px 0px;
+}
+.contact__container{
+
+}
+.contact__content{    
+    padding: 0px 0px 20px 0px;
+
+}
+@media(min-width: 768px){
+    .contact__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact__content{    
+        padding: 0px 20px 0px 0px;
+     }
+}
+
+
+
+.contact__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    &:not(:last-child){
+        margin: 0px 0px 10px 0px;
+    }
+}
+.contact__text{
+    color: $secondTextColor;
+    line-height: 142%;
+}
+.contact__button{
+    display: flex;
+    background: $primColor;
+    border-radius: 5px;
+    min-height: 58px;
+    padding: 5px 40px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.3s ease 0s;
+    &:hover{
+        background-color: #b15b39;
+    }
+}

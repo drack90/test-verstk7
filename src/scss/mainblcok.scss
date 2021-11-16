@@ -61,6 +61,8 @@
             line-height: 150%;
             font-weight: 700;
             margin: 10px 0px;
+           transition: all 0.3s ease 0s;
+
         }
         
         @media (max-width: 479px) {
@@ -78,11 +80,21 @@
         .main-block__button_orange {
             background: $primColor;
             color: #fff;
+            &:hover{
+                background: #fff;
+                color: $primColor;
+            }
         }
         
         .main-block__button_border {
             color: $secondColor;
             border: 1px solid $secondColor;
+            &:hover{
+                color: $secondColor;
+                border: 1px solid $secondColor;
+                background-color: $secondColor;
+                color: #fff;
+            }
         }
         
         .main-block__image {

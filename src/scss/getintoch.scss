@@ -1,0 +1,107 @@
+@import 'variables.scss';
+
+
+/*------------GET IN TOUCH---------------*/
+.getintouch{
+    padding: 80px 0px 145px 0px;
+    @media(max-width:992px){
+        margin: 50px 0px;
+    }
+}
+.page__getintoch{
+
+}
+.getintouch__header{
+    margin: 0px 0px 80px 0px;
+        @media(max-width:992px){
+            margin: 0px 0px 50px 0px;
+        }
+        @media(max-width:767px){
+            margin: 0px 0px 30px 0px;
+        }
+
+
+}
+.getintouch__items{
+margin: 0px -15px;
+}
+@media(min-width:992px){
+    .getintouch__items{
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+.getintouch__item{
+    flex: 0 1 33.333%;
+}
+.item-getintouch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 15px;
+}
+
+.item-getintouch_active{
+    background: $bgColorDark;
+    color: #fff;
+    padding: 80px 15px;
+    @media(max-width:992px){
+        padding: 50px 15px;
+    }
+
+    .item-getintouch__button{
+        border: 1px solid #fff;
+        color: #fff;
+       &:hover{
+        border: 1px solid $primColor;
+
+       } 
+    }
+}
+
+.item-getintouch> *:not(:last-child){
+    margin: 0px 0px 15px 0px;
+}
+.item-getintouch__icon{}
+.item-getintouch__emails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.item-getintouch__email{
+    color:inherit;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.item-getintouch__label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+.item-getintouch__button{
+    border: 1px solid $primColor;
+    border-radius: 5px;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primColor;
+    line-height: 142%;
+    padding: 5px 20px ;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+    &:hover{
+        background-color: $primColor;
+        color: #fff;
+
+    }
+}
